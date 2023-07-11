@@ -1,23 +1,22 @@
 {
-  "name": "sb-vue",
-  "version": "0.1.0",
   "private": true,
+  "name": "demo-vue-suggest",
+  "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "lodash-es": "^4.17.21",
-    "vue": "^3.3.4"
+    "predeploy": "npm run build",
+    "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/"
   },
   "devDependencies": {
+    "@types/lodash-es": "^4.17.7",
+    "@types/vue": "^2.0.0",
     "@vue/cli-plugin-babel": "^4.4.0",
-    "@vue/cli-plugin-eslint": "^4.4.0",
     "@vue/cli-service": "^4.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^5.0.0",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.3.4",
     "vue-template-compiler": "^2.6.11"
   }
 }
