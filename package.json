@@ -2,6 +2,7 @@
   "private": true,
   "name": "demo-vue-suggest",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
